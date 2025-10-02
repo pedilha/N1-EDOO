@@ -1,0 +1,13 @@
+um hospital inteligente precisa de um sistema para gerenciar pacientes em diferentes setores. cada setor possui regras distintas de atendimento e organização dos paciente. Alem disso, ohospital deve manter um historico d epacientes ja atendidos (tudo em java).
+tarefa
+implemente em java um sistema orientado a objetos que atenda aos requisitos descritos. A implementação das estruturas de dados devem ser feitas manuallmente, sem ultilização de api collections java
+1-cada setor do hospital deve ultilizar uma estrutura de dados diferen (fila,lista e pilha), escolhida de acordo com o comportamento do setor.
+2- o sistema deve permitir,
+.cadastro de paciente em diferentes setores
+.atendidmento de paciente conforme a estrutura escolhida
+.consulta ao ultimo paciente atendido
+.exibição do estado atual das estruturas
+
+3-ultilize conceitos de POO, incluindo calsses abstratas, herança, interfaces e polimorfismo
+4-na classe main simule operações de cadastro,atendimento e consulta.
+faça tudo sem emojis e comentarios.
