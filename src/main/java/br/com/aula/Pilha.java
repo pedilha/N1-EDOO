@@ -1,3 +1,5 @@
+package br.com.aula;
+import br.com.aula.No;
 import br.com.aula.Paciente;
 
 public class Pilha {
