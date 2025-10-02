@@ -1,15 +1,15 @@
 package br.com.aula;
-import br.com.aula.Pessoa;
+import br.com.aula.Paciente;
 
 
 public class lista {
-    Pessoa pessoa;
+    Paciente pessoa;
 
-    public lista(Pessoa pessoa) {
+    public lista(Paciente pessoa) {
         this.pessoa = pessoa;
     }
-    public void setPessoa(Pessoa pessoa) {}
-    public Pessoa getPessoa() {
+    public void setPessoa(Paciente pessoa) {}
+    public Paciente getPessoa() {
         return pessoa;
     }
     public void setIdade(int idade) {}

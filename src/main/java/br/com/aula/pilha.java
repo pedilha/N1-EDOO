@@ -1,15 +1,38 @@
-package br.com.aula;
+import br.com.aula.Paciente;
 
-public class pilha {
-    Pessoa pessoa;
-    public pilha() {}
-    public pilha(Pessoa pessoa) {
-        this.pessoa = pessoa;
+public class Pilha {
+    private No topo;
 
+    public boolean estaVazia() {
+        return topo == null;
     }
 
-    public void setPessoa(Pessoa pessoa) {}
-    public Pessoa getPessoa() {return pessoa;}
-    public void setIdade(int idade) {}
+    public void empilhar(Paciente paciente) {
+        No novoNo = new No(paciente);
+        if (!estaVazia()) {
+            novoNo.setProximo(topo);
+        }
+        topo = novoNo;
+    }
 
+    public Paciente desempilhar() {
+        if (estaVazia()) {
+            return null;
+        }
+        Paciente pacienteAtendido = topo.getPaciente();
+        topo = topo.getProximo();
+        return pacienteAtendido;
+    }
+
+    public void exibir() {
+        if (estaVazia()) {
+            System.out.println("Pilha vazia.");
+            return;
+        }
+        No atual = topo;
+        while (atual != null) {
+            System.out.println(atual.getPaciente());
+            atual = atual.getProximo();
+        }
+    }
 }

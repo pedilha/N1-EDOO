@@ -1,10 +1,13 @@
+
+
 package br.com.aula;
-public class Pessoa {
+
+public class Paciente {
     private String nome;
     private int id;
     private static int proximoId = 1;
 
-    public Pessoa(String nome) {
+    public Paciente(String nome) {
         this.nome = nome;
         this.id = proximoId++;
     }
